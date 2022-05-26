@@ -1,0 +1,497 @@
+ 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+ }
+header {
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: #fff;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+}
+
+h1 {
+    float: left;
+}
+
+header .contenedor {
+    display: table;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+/* empieza menu hamburguesa */
+#menu-bar {
+    display: none;
+}
+
+header label {
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;    
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(51,51,51,0.9);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.menu a:hover {
+    background: rgba(255,255,255,0.3)
+}
+
+#menu-bar:checked ~ .menu {
+    transform: translateX(0%);
+}
+
+/* media querie menu */
+
+@media screen and (min-width: 1024px) {
+    .menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;       
+    }
+    .menu a {
+        border: none;
+    }
+    header label {
+        display: none;
+    }
+}     
+
+@media screen and (max-width: 547px) {
+    #banner p {
+        display: none;
+        
+    }
+}
+
+/* EMPIEZA MAIN */
+
+#banner {
+    margin-top: 50px;
+    position: relative;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+}
+
+#banner .contenedor {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    color: #fff;
+    transform: translateX(-5%) translateY(-50%);  
+    font-size: 30px;
+}
+
+
+#banner h2 {
+    font-size: 60px;
+}
+
+.modelos-destacados {
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .modelos-destacados {
+        font-size: 25px;
+    }
+}
+
+
+/* EMPIEZA CUERPO */
+.gridcuerpo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    padding-top: 100px;
+    justify-items: center;
+    align-content: space-around; 
+}
+
+.gridcuerpo .gridcuerpo__producto {
+    align-self: end;
+    width: 50vh;
+}
+
+.gridcuerpo .gridcuerpo__producto h4 {
+    font-size: 30px;
+    text-align: left;
+    padding-left: 40px;
+
+
+}
+@media (min-width: 768px) {
+    .gridcuerpo {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.gridcuerpo__texto {
+    margin: 15px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.gridcuerpo__imagen {
+    width: 80%;
+}
+
+
+
+/* footer */
+footer {
+    background-color: rgb(179, 176, 176);
+    color: rgb(0, 0, 0);
+    padding: 30px;
+}
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.copy {
+    font-size: 20px;
+}
+
+.sociales {
+    width: 100%;
+    text-align: center;
+    font-size: 28px; 
+}
+
+.sociales a {
+    color: #333;
+    text-decoration: none;
+}
+
+@media screen and (min-width:768px) {
+    .sociales {
+        width: auto;
+    }
+    footer .contenedor {
+        justify-content: space-between;
+    }
+}
+
+/* empieza bicicletas */
+#comparacion {
+    padding: 20px;
+    margin-left: 800px;
+}
+
+.tabla {
+    margin: 20px;
+    border: 3px solid;
+}
+
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.fotos .dh img {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 5px 8px 12px black;
+}
+.fotos .ruta img {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 5px 8px 12px black;
+}
+.fotos .ebike img {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 5px 8px 12px black;
+}
+.fotos .dirt img {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 5px 8px 12px black;
+}
+
+/* empieza equipamiento */
+#equipamiento {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+.desplegable {
+    text-align: center;
+    position: sticky;
+    z-index: 500;
+    font-weight: bold;
+    
+}
+
+.fotos .casco img {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    order: 1;
+    border-radius: 30px;
+    box-shadow: 5px 8px 12px black;
+
+}
+.fotos .guantes img {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    order: 2;
+    border-radius: 30px;
+    box-shadow: 5px 8px 12px black;
+}
+.fotos .zapatillas img {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    order: 3;
+    border-radius: 30px;
+    box-shadow: 5px 8px 12px black;
+}
+.fotos .indumentaria img {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    order: 4;
+    border-radius: 30px;
+    box-shadow: 5px 8px 12px black;
+}
+.fotos .lentes img {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    order: 5;
+    border-radius: 30px;
+    box-shadow: 5px 8px 12px black;
+}
+.fotos .mochilas img {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    order: 6;
+    border-radius: 30px;
+    box-shadow: 5px 8px 12px black;
+}
+
+.fotos p {
+    text-align: center;
+    font-size: 40px;
+}
+
+.notas {
+    padding: 15px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.importancia {
+    padding: 15px;
+    font-size: 25px;
+   
+  
+}
+
+/*EMPIEZA EVENTOS  */
+
+.proximos-eventos {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    margin: 30px 0;
+}
+
+.grideventos h2 {
+    text-align: center;
+    padding: 60px;
+    font-size: 60px;
+    text-decoration: double;
+}
+
+@media (max-width: 768px) {
+    .grideventos h2 {
+        font-size: 25px;
+        text-align: center;
+        
+    }
+}
+/* Clases Evento */
+
+.contenedorjero {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.grideventos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 50px;
+    width: 120%;
+    align-items: start; 
+       
+}
+
+@media (min-width: 768px) {
+    .grideventos {
+        grid-template-columns: repeat(3, 1fr);
+        }
+}
+
+.grideventos__producto {
+    padding: 10px;
+    box-shadow: 5px 8px 12px black;
+    margin-bottom: 15px;
+    border-radius: 30px;
+}
+
+.grideventos__enlace {
+    text-decoration: none;
+}
+
+.grideventos__imagen {
+    width: 100%;
+    height: 100%;
+}
+.grideventos__texto {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.proximos__eventos {
+    
+    font-size: 30px;
+    text-align: center;
+    padding: 60px;
+}
+
+
+/* desplegable */
+
+ul li {
+    list-style: none;
+    display: inline;
+    position: relative;
+    font-size: 22px;
+}
+ul li a {
+    padding: 10px 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    min-width: 170px;
+    text-align: center;
+    
+}
+ul li a:hover {
+    background: black;
+    color: white;
+}
+/* submenu */
+ul li ul {
+    display: none;/* oculto en reposo */
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+ul li:hover ul {
+    display: block;/* visible mouse hover */
+}
+ul li ul li a {
+    font-size: 12px;
+    text-align: left;
+    font-size: 18px;
+}
+
+/* EMPIEZA CONTACTO */
+
+.container {
+    display: flex;
+}
+.container img {
+    margin: 10px;
+    width: 60%;
+} 
+
+.mapa p {    
+    text-decoration: underline;
+    font-size: 25px;
+}
+.mapa {
+    margin: 50px;
+}
+.formulario {
+    margin: 30px;
+    padding: 10px;  
+    text-decoration: underline;
+    
+}
+.bloque-formulario {
+  margin: 50px;    
+} 
+
