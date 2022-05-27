@@ -5,6 +5,11 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
  }
+
+body {
+    background-color: tomato;
+}
+
 header {
     width: 100%;
     height: 50px;
