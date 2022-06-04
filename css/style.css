@@ -6,9 +6,9 @@
     font-family: 'Open Sans', sans-serif;
  }
 
-body {
+/* body {
     background-image: linear-gradient(to left, rgb(66, 66, 66), rgb(255, 255, 255));
-}
+} */
 
 nav {
     background-image: linear-gradient(to left, rgb(66, 66, 66), rgb(255, 255, 255));
@@ -28,6 +28,33 @@ nav {
 
 
 /* EMPIEZA CUERPO */
+
+.h2-modelos {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 50px;
+}
+
+.fb-total {
+    background-color: rgb(189, 189, 189);
+}
+
+.fb-content {
+    text-align: center;
+    
+}
+ .fb-text {
+     font-size: 20px;
+     padding: 10px;
+     text-decoration: solid ;
+ }
+
+.fb-list {
+    border-radius: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+
 .gridcuerpo {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -50,7 +77,7 @@ nav {
 
 
 }
-@media (min-width: 768px) {
+@media (min-width: 1250px) {
     .gridcuerpo {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -63,7 +90,7 @@ nav {
 }
 
 .gridcuerpo__imagen {
-    width: 80%;
+    width: 110%;
 }
 
 /* footer */
@@ -104,10 +131,125 @@ footer .contenedor {
     }
 }
 
+/* PRUEBA */
+section {
+    display: flex;
+    padding: 60px;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+    
+    
+}
+
+.section h2, p {
+    text-align: center;
+}
+
+.section img {
+    width: 500px;
+    height: 600px;
+    padding: 1rem;
+   
+}
+
+@media (max-width:768px) {
+    .section {
+        flex-direction: column;
+    }
+    
+}
+
+
+
+
+/* PRUEBA */
+
+.img-responsive {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+@media (max-width:768px) {
+    .img-responsive {
+        flex-direction: column;
+    }
+}
+
+.img-responsive h2, p {
+    text-align: center;
+}
+/* PRUEBA */
+
+.foto-texto {
+    overflow: hidden;
+    position: relative;
+   
+}
+
+div .foto-h1{
+    font-size: 2rem;
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    text-decoration: underline; 
+    font-weight: bold;
+}
+
+div .bc-text {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 12%;
+    left: 7%;
+    font-weight: bold; 
+}
+
+.bc-link a {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 18%;
+    left: 6.5%;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+}
+
+@media (max-width:1250px) {
+    div .foto-h1 {
+        font-size: 1.5rem;
+        position: absolute;
+        top: 5%;
+        left: 7%;
+        text-decoration: underline;  
+    }
+}
+@media (max-width:1250px) {
+    div .bc-text {
+        font-size: 1rem;
+        position: absolute;
+        top: 13%;
+        left: 7%;
+    }
+}
+    
+@media (max-width:1250px) {
+    .bc-link a {
+        font-size: 1rem;
+        position: absolute;
+        top: 20%;
+        left: 7%;
+    }
+}
+
 /* empieza bicicletas */
 #comparacion {
     padding: 20px;
     margin-left: 800px;
+    text-decoration: underline;
+
 }
 
 .tabla {
@@ -375,7 +517,6 @@ ul li ul li a {
 .bloque-formulario {
   margin: 50px;    
 } 
-
 
 
 
