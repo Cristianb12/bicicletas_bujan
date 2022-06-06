@@ -8,7 +8,7 @@
 
 /* body {
     background-image: linear-gradient(to left, rgb(66, 66, 66), rgb(255, 255, 255));
-} */
+}  */
 
 nav {
     background-image: linear-gradient(to left, rgb(66, 66, 66), rgb(255, 255, 255));
@@ -28,7 +28,7 @@ nav {
 
 
 /* EMPIEZA CUERPO */
-
+ 
 .h2-modelos {
     text-align: center;
     font-size: 50px;
@@ -36,23 +36,33 @@ nav {
 }
 
 .fb-total {
-    background-color: rgb(189, 189, 189);
+    
 }
 
 .fb-content {
     text-align: center;
     
+    
 }
  .fb-text {
-     font-size: 20px;
+     font-size: 30px;
      padding: 10px;
      text-decoration: solid ;
+     background-color: rgb(70, 70, 70);
+     color: white;
+     text-align: center;
+ }
+
+ .fb-content h2 {
+    background-color: rgb(70, 70, 70);
+    color: white;
  }
 
 .fb-list {
     border-radius: rgb(0, 0, 0);
     padding: 10px;
-}
+    
+} 
 
 
 .gridcuerpo {
@@ -162,7 +172,6 @@ section {
 
 
 
-
 /* PRUEBA */
 
 .img-responsive {
@@ -183,6 +192,16 @@ section {
 .img-responsive h2, p {
     text-align: center;
 }
+
+.img-responsive p {
+    text-align: start;
+    margin-left: 10px;
+}
+
+
+
+
+
 /* PRUEBA */
 
 .foto-texto {
@@ -244,15 +263,47 @@ div .bc-text {
     }
 }
 
+
+/* empieza BICICLETAS */
+
+.cards {
+    max-width: 100%;
+    padding-bottom: 200px;
+}
+
+.titulo-bicicletas h1 {
+    text-align: center;
+    padding: 3rem;
+}
+
+.titulo-botones {
+   text-align: center;
+   padding-bottom: 2rem;
+}
+
+.card-footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.cards img {
+    display: flex;
+    
+}
+
+
 /* empieza bicicletas */
-#comparacion {
+/* #comparacion {
     padding: 20px;
     margin-left: 800px;
     text-decoration: underline;
 
 }
+ */
 
-.tabla {
+
+
+/* .tabla {
     margin: 20px;
     border: 3px solid;
 }
@@ -290,7 +341,7 @@ div .bc-text {
     margin: 10px;
     border-radius: 30px;
     box-shadow: 5px 8px 12px black;
-}
+} */
 
 /* empieza equipamiento */
 #equipamiento {
@@ -298,6 +349,12 @@ div .bc-text {
     margin: 20px;
     text-align: center;
     font-size: 50px;
+    
+}
+
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
     
 }
 
@@ -375,6 +432,11 @@ div .bc-text {
     font-size: 25px;
    
   
+}
+
+.header-equipamiento {
+    text-align: center;
+   
 }
 
 /*EMPIEZA EVENTOS  */
