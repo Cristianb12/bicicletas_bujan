@@ -1,0 +1,655 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* body {
+    background-image: linear-gradient(to left, rgb(66, 66, 66), rgb(255, 255, 255));
+}  */
+nav {
+  background-image: -webkit-gradient(linear, right top, left top, from(#424242), to(white));
+  background-image: linear-gradient(to left, #424242, white);
+}
+
+.modelos-destacados {
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .modelos-destacados {
+    font-size: 25px;
+  }
+}
+
+/* EMPIEZA CUERPO */
+.h2-modelos {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 50px;
+}
+
+.fb-content {
+  text-align: center;
+}
+
+.fb-text {
+  font-size: 30px;
+  padding: 10px;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  background-color: #464646;
+  color: white;
+  text-align: center;
+}
+
+.fb-content h2 {
+  background-color: #464646;
+  color: white;
+}
+
+.fb-list {
+  border-radius: black;
+  padding: 10px;
+}
+
+.gridcuerpo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  gap: 15px;
+  padding-top: 100px;
+  justify-items: center;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.gridcuerpo .gridcuerpo__producto {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  width: 50vh;
+}
+
+.gridcuerpo .gridcuerpo__producto h4 {
+  font-size: 30px;
+  text-align: left;
+  padding-left: 40px;
+}
+
+@media (min-width: 1250px) {
+  .gridcuerpo {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.gridcuerpo__texto {
+  margin: 15px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.gridcuerpo__imagen {
+  width: 110%;
+}
+
+/* footer */
+footer {
+  background-color: #b3b0b0;
+  color: black;
+  padding: 30px;
+}
+
+footer .contenedor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 25px;
+}
+
+.copy {
+  font-size: 20px;
+}
+
+.sociales {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+}
+
+.sociales a {
+  color: #333;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .sociales {
+    width: auto;
+  }
+  footer .contenedor {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+/* PRUEBA */
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 60px;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section h2, p {
+  text-align: center;
+}
+
+.section img {
+  width: 500px;
+  height: 600px;
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/* PRUEBA */
+.img-responsive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .img-responsive {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.img-responsive h2, p {
+  text-align: center;
+}
+
+.img-responsive p {
+  text-align: start;
+  margin-left: 10px;
+}
+
+/* PRUEBA */
+.foto-texto {
+  overflow: hidden;
+  position: relative;
+}
+
+div .foto-h1 {
+  font-size: 2rem;
+  position: absolute;
+  top: 5%;
+  left: 7%;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+div .bc-text {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 12%;
+  left: 7%;
+  font-weight: bold;
+}
+
+.bc-link a {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 18%;
+  left: 6.5%;
+  font-weight: bold;
+  background-color: white;
+}
+
+@media (max-width: 1250px) {
+  div .foto-h1 {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 1250px) {
+  div .bc-text {
+    font-size: 1rem;
+    position: absolute;
+    top: 13%;
+    left: 7%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .bc-link a {
+    font-size: 1rem;
+    position: absolute;
+    top: 20%;
+    left: 7%;
+  }
+}
+
+/* empieza BICICLETAS */
+.cards {
+  max-width: 100%;
+  padding-bottom: 200px;
+}
+
+.titulo-bicicletas h1 {
+  text-align: center;
+  padding: 3rem;
+}
+
+.titulo-botones {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.card-footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.cards img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* empieza bicicletas */
+/* #comparacion {
+    padding: 20px;
+    margin-left: 800px;
+    text-decoration: underline;
+
+}
+ */
+/* .tabla {
+    margin: 20px;
+    border: 3px solid;
+}
+
+.fotos {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.fotos .dh img {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 5px 8px 12px black;
+}
+.fotos .ruta img {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 5px 8px 12px black;
+}
+.fotos .ebike img {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 5px 8px 12px black;
+}
+.fotos .dirt img {
+    width: 600px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 5px 8px 12px black;
+} */
+/* empieza equipamiento */
+#equipamiento {
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.fotos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.desplegable {
+  text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 500;
+  font-weight: bold;
+}
+
+.fotos .casco img {
+  width: 600px;
+  height: 400px;
+  margin: 10px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 8px 12px black;
+          box-shadow: 5px 8px 12px black;
+}
+
+.fotos .guantes img {
+  width: 600px;
+  height: 400px;
+  margin: 10px;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 8px 12px black;
+          box-shadow: 5px 8px 12px black;
+}
+
+.fotos .zapatillas img {
+  width: 600px;
+  height: 400px;
+  margin: 10px;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 8px 12px black;
+          box-shadow: 5px 8px 12px black;
+}
+
+.fotos .indumentaria img {
+  width: 600px;
+  height: 400px;
+  margin: 10px;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 8px 12px black;
+          box-shadow: 5px 8px 12px black;
+}
+
+.fotos .lentes img {
+  width: 600px;
+  height: 400px;
+  margin: 10px;
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 8px 12px black;
+          box-shadow: 5px 8px 12px black;
+}
+
+.fotos .mochilas img {
+  width: 600px;
+  height: 400px;
+  margin: 10px;
+  -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+          order: 6;
+  border-radius: 30px;
+  -webkit-box-shadow: 5px 8px 12px black;
+          box-shadow: 5px 8px 12px black;
+}
+
+.fotos p {
+  text-align: center;
+  font-size: 40px;
+}
+
+.notas {
+  padding: 15px;
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+.importancia {
+  padding: 15px;
+  font-size: 25px;
+}
+
+.header-equipamiento {
+  text-align: center;
+}
+
+/*EMPIEZA EVENTOS  */
+.proximos-eventos {
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+  margin: 30px 0;
+}
+
+.grideventos h2 {
+  text-align: center;
+  padding: 60px;
+  font-size: 60px;
+  -webkit-text-decoration: double;
+          text-decoration: double;
+}
+
+@media (max-width: 768px) {
+  .grideventos h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+/* Clases Evento */
+.contenedorjero {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grideventos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  width: 120%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+@media (min-width: 768px) {
+  .grideventos {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grideventos__producto {
+  padding: 10px;
+  -webkit-box-shadow: 5px 8px 12px black;
+          box-shadow: 5px 8px 12px black;
+  margin-bottom: 15px;
+  border-radius: 30px;
+}
+
+.grideventos__enlace {
+  text-decoration: none;
+}
+
+.grideventos__imagen {
+  width: 100%;
+  height: 100%;
+}
+
+.grideventos__texto {
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.proximos__eventos {
+  font-size: 30px;
+  text-align: center;
+  padding: 60px;
+}
+
+/* desplegable */
+ul li {
+  list-style: none;
+  display: inline;
+  position: relative;
+  font-size: 22px;
+}
+
+ul li a {
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  min-width: 170px;
+  text-align: center;
+}
+
+ul li a:hover {
+  background: black;
+  color: white;
+}
+
+/* submenu */
+ul li ul {
+  display: none;
+  /* oculto en reposo */
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+ul li:hover ul {
+  display: block;
+  /* visible mouse hover */
+}
+
+ul li ul li a {
+  font-size: 12px;
+  text-align: left;
+  font-size: 18px;
+}
+
+/* EMPIEZA CONTACTO */
+.FormularioMapa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.FormularioMapa .mapa {
+  margin: 50px;
+}
+
+.FormularioMapa .mapa p {
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+.FormularioMapa .formulario {
+  margin: 30px;
+  padding: 10px;
+  text-decoration: underline;
+}
+
+.FormularioMapa .bloque-formulario {
+  margin: 50px;
+}
+
+.contacto__body {
+  background-image: -webkit-gradient(linear, right top, left top, from(#9c9c9c), to(white));
+  background-image: linear-gradient(to left, #9c9c9c, white);
+}
+
+.header__contacto h1 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 3rem;
+}
+
+.header__contacto p {
+  text-align: center;
+  font-size: 20px;
+}
+
+.foto__contacto p {
+  text-align: left;
+  padding: 30px;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .foto__contacto p {
+    font-size: 1rem;
+    padding: 15px;
+  }
+}
+
+.contacto__transformando {
+  background-color: #333;
+}
+
+.contacto__transformando h2 {
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+.contacto__transformando iframe {
+  padding: 1rem;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */

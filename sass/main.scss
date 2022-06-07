@@ -1,5 +1,8 @@
- 
- *{
+
+@import 'font';
+
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -35,9 +38,7 @@ nav {
     padding-top: 50px;
 }
 
-.fb-total {
-    
-}
+
 
 .fb-content {
     text-align: center;
@@ -555,30 +556,73 @@ ul li ul li a {
 
 /* EMPIEZA CONTACTO */
 
-.container {
+.FormularioMapa {
     display: flex;
-}
-.container img {
-    margin: 10px;
-    width: 60%;
-} 
-
-.mapa p {    
-    text-decoration: underline;
-    font-size: 25px;
-}
-.mapa {
-    margin: 50px;
-}
-.formulario {
-    margin: 30px;
-    padding: 10px;  
-    text-decoration: underline;
+    justify-content: space-around;
+    flex-wrap: wrap;
     
+    .mapa {
+        margin: 50px;
+            p {    
+                text-decoration: underline;
+                font-size: 25px;
+                }
+            }
+    .formulario {
+        margin: 30px;
+        padding: 10px;  
+        text-decoration: underline; 
+        }
+        .bloque-formulario {
+            margin: 50px;  
+          } 
 }
-.bloque-formulario {
-  margin: 50px;    
-} 
 
 
 
+.contacto__body {
+    background-image: $gradiente ;
+
+}
+
+.header__contacto {
+    h1 {
+        text-align: $textAlign;
+        padding: $padding;
+        font-size: $fontSizeH1;
+    }
+    p {
+        text-align: $textAlign; 
+        font-size: $fontSizeP;
+    }
+}
+
+.foto__contacto {
+    p {        
+        text-align: left;
+        padding: 30px;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: $tablet) {
+    .foto__contacto p {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+}
+
+.contacto__transformando {
+    background-color: #333;  
+
+    h2 {
+       padding: $padding;
+       color: white;
+       text-align: center;         
+    }
+    iframe {
+        padding: $padding;
+        text-align: center;
+    }
+}
