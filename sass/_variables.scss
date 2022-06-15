@@ -1,0 +1,29 @@
+$redes:(
+    fb: blue,
+    tt: skyblue,
+    ig: rgb(245, 82, 245),
+    yt: red,
+);
+
+//mixin
+
+@mixin parrafo ($col) {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    color: $col;    
+}
+
+@mixin titulo {
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;    
+    text-align: center;
+    font-size: 50px;
+    padding-top: 50px;
+}
+

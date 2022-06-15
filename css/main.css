@@ -28,6 +28,12 @@ nav {
 
 /* EMPIEZA CUERPO */
 .h2-modelos {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   text-align: center;
   font-size: 50px;
   padding-top: 50px;
@@ -106,42 +112,141 @@ footer {
   padding: 30px;
 }
 
-footer .contenedor {
+.copy {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.container-footer-all {
+  width: 100%;
+  margin: auto;
+  max-width: 1600px;
+}
+
+.container-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 25px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.copy {
-  font-size: 20px;
+.colum1 {
+  max-width: 400px;
 }
 
-.sociales {
-  width: 100%;
-  text-align: center;
-  font-size: 28px;
+.colum1 p {
+  text-align: left;
+  margin-top: 20px;
 }
 
-.sociales a {
-  color: #333;
+.colum2 {
+  max-width: 400px;
+}
+
+.colum2 .row {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.colum2 a {
   text-decoration: none;
+  color: black;
 }
 
-@media screen and (min-width: 768px) {
-  .sociales {
-    width: auto;
-  }
-  footer .contenedor {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
+.colum3 {
+  max-width: 400px;
+}
+
+.colum3 label {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.icon-fb {
+  color: blue;
+}
+
+.icon-tt {
+  color: skyblue;
+}
+
+.icon-ig {
+  color: #f552f5;
+}
+
+.icon-yt {
+  color: red;
+}
+
+/* Trayendo maps de partial _variables */
+.colum2 .fb {
+  color: blue;
+}
+
+.colum2 .tt {
+  color: skyblue;
+}
+
+.colum2 .ig {
+  color: #f552f5;
+}
+
+.colum2 .yt {
+  color: red;
+}
+
+/* aplicando extend en forma de boton en "redes sociales" */
+.redes-soc, .redes-soc--gris, .info-contacto--gris {
+  display: inline;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 30px;
+  color: white;
+}
+
+.redes-soc--gris {
+  background-color: #999898;
+}
+
+.info-contacto {
+  display: inline;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 30px;
+  color: black;
+}
+
+.info-contacto--gris {
+  background-color: #999898;
+}
+
+.info-contacto {
+  color: black;
+  text-decoration: none;
+  background-color: #999898;
+}
+
+.sobreNos, .sobreNosGris {
+  display: inline;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 30px;
+  color: black;
+}
+
+.sobreNosGris {
+  background-color: #999898;
+  text-decoration: none;
 }
 
 /* PRUEBA */
@@ -293,59 +398,18 @@ div .bc-text {
   display: flex;
 }
 
-/* empieza bicicletas */
-/* #comparacion {
-    padding: 20px;
-    margin-left: 800px;
-    text-decoration: underline;
-
-}
- */
-/* .tabla {
-    margin: 20px;
-    border: 3px solid;
-}
-
-.fotos {
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-
-.fotos .dh img {
-    width: 600px;
-    height: 400px;
-    margin: 10px;
-    border-radius: 30px;
-    box-shadow: 5px 8px 12px black;
-}
-.fotos .ruta img {
-    width: 600px;
-    height: 400px;
-    margin: 10px;
-    border-radius: 30px;
-    box-shadow: 5px 8px 12px black;
-}
-.fotos .ebike img {
-    width: 600px;
-    height: 400px;
-    margin: 10px;
-    border-radius: 30px;
-    box-shadow: 5px 8px 12px black;
-}
-.fotos .dirt img {
-    width: 600px;
-    height: 400px;
-    margin: 10px;
-    border-radius: 30px;
-    box-shadow: 5px 8px 12px black;
-} */
 /* empieza equipamiento */
 #equipamiento {
-  padding: 20px;
-  margin: 20px;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   text-align: center;
   font-size: 50px;
+  padding-top: 50px;
+  margin-top: 50px;
 }
 
 .fotos {
@@ -496,6 +560,7 @@ div .bc-text {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  padding-bottom: 50px;
 }
 
 @media (min-width: 768px) {
