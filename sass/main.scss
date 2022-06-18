@@ -10,9 +10,6 @@
     font-family: 'Open Sans', sans-serif;
  }
 
-/* body {
-    background-image: linear-gradient(to left, rgb(66, 66, 66), rgb(255, 255, 255));
-}  */
 
 nav {
     background-image: linear-gradient(to left, rgb(66, 66, 66), rgb(255, 255, 255));
@@ -37,7 +34,11 @@ nav {
     @include titulo;
 }
 
-
+@media (max-width:768px){
+    .h2-modelos {
+        font-size: 28px;        
+    }
+}
 
 .fb-content {
     text-align: center;
@@ -64,195 +65,85 @@ nav {
     
 } 
 
-
-.gridcuerpo {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 15px;
-    padding-top: 100px;
-    justify-items: center;
-    align-content: space-around; 
-    
-}
-
-.gridcuerpo .gridcuerpo__producto {
-    align-self: end;
-    width: 50vh;
-}
-
-.gridcuerpo .gridcuerpo__producto h4 {
-    font-size: 30px;
-    text-align: left;
-    padding-left: 40px;
-
-
-}
-@media (min-width: 1250px) {
-    .gridcuerpo {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-.gridcuerpo__texto {
-    margin: 15px;
-    text-align: center;
-    font-size: 30px;
-}
-
-.gridcuerpo__imagen {
-    width: 110%;
-}
-
-
-
-
 /* footer */
-footer {
-    background-color: rgb(179, 176, 176);
-    color: rgb(0, 0, 0);
-    padding: 30px;
-}
 
-.copy {
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
     font-size: 20px;
     text-align: center;
-    margin-top: 30px;
-    font-size: 1rem;
-    text-decoration: underline;
-    
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;    
 }
 
-
-.container-footer-all {
-    width: 100%;   
-    margin: auto;  
-    max-width: 1600px;
-    
-}
-
-.container-body {
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-.colum1 {
-    max-width: 400px;
-    p{
-        text-align: left;
-        margin-top: 20px;
-    }
-    
-}
-
-.colum2 {
-    max-width: 400px;
-    .row {
-        margin-top: 20px;
-        display: flex;
-    }
-    a {
-        text-decoration: none;
-        color: black;
-    }
-}
-
-.colum3 {
-    max-width: 400px;
-        label {
-        text-align: left;
-        margin-top: 20px;
-        
-    }
-    
-}
-
-@each $nombre, $valor in $redes {
-    .icon-#{$nombre} {
-        color: $valor;
-    }
-}
-
-/* Trayendo maps de partial _variables */
-.colum2 {
-    .fb {
-        color: map-get($redes, fb);
-    }
-    .tt {
-        color: map-get($redes, tt);
-    }
-    .ig {
-        color: map-get($redes, ig);
-    }
-    .yt {
-        color: map-get($redes, yt);
-    }
-}
-
-/* aplicando extend en forma de boton en "redes sociales" */
-
-.redes-soc {
-    display: inline;
-    width: 200px;
-    border: 1px solid black;
-    border-radius: 10px;
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    
-}
-
-.redes-soc--gris {
-    @extend .redes-soc;
-    background-color: rgb(153, 152, 152);
-}
-
-
-.info-contacto {
-    display: inline;
-    width: 200px;
-    border: 1px solid black;
-    border-radius: 10px;
-    font-size: 30px;
-    color: rgb(0, 0, 0)
-}
-
-.info-contacto--gris {
-    @extend .redes-soc;
-    background-color: rgb(153, 152, 152);
-}
-
-.info-contacto {
-    color: black;
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
     text-decoration: none;
-    background-color: rgb(153, 152, 152);
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;    
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
 }
 
 
-.sobreNos {
-    display: inline;
-    width: 200px;
-    border: 1px solid black;
-    border-radius: 10px;
-    font-size: 30px;
-    color: rgb(0, 0, 0)
-}
 
-.sobreNosGris {
-    @extend .sobreNos;
-    background-color: rgb(153, 152, 152);
-    text-decoration: none;
-}
-
-
+    
 
 /* PRUEBA */
 section {
     display: flex;
     padding: 60px;
     gap: 10px;
-    flex-wrap: wrap;
-    
-    
+    flex-wrap: wrap;    
     
 }
 
@@ -285,6 +176,7 @@ section {
     padding: 20px;
     margin-top: 50px;
     margin-bottom: 100px;
+    
 }
 
 @media (max-width:768px) {
@@ -303,14 +195,12 @@ section {
 }
 
 
-
-
-
 /* PRUEBA */
 
 .foto-texto {
     overflow: hidden;
     position: relative;
+    
    
 }
 
@@ -342,7 +232,7 @@ div .bc-text {
 
 @media (max-width:1250px) {
     div .foto-h1 {
-        font-size: 1.5rem;
+        font-size: 16px;
         position: absolute;
         top: 5%;
         left: 7%;
@@ -351,9 +241,9 @@ div .bc-text {
 }
 @media (max-width:1250px) {
     div .bc-text {
-        font-size: 1rem;
+        font-size: 13px;
         position: absolute;
-        top: 13%;
+        top: 15%;
         left: 7%;
     }
 }
@@ -362,10 +252,11 @@ div .bc-text {
     .bc-link a {
         font-size: 1rem;
         position: absolute;
-        top: 20%;
+        top: 60%;
         left: 7%;
     }
 }
+
 
 
 /* empieza BICICLETAS */
@@ -396,17 +287,13 @@ div .bc-text {
 }
 
 /* empieza equipamiento */
+
 #equipamiento {
     @include titulo;
     margin-top: 50px;
     
 }
 
-.fotos {
-    display: flex;
-    flex-wrap: wrap;
-    
-}
 
 .desplegable {
     text-align: center;
@@ -416,60 +303,33 @@ div .bc-text {
     
 }
 
-.fotos .casco img {
-    width: 600px;
-    height: 400px;
-    margin: 10px;
-    order: 1;
+#galeria {
+    img {
+    width: 100%;
+    height: 250px; 
     border-radius: 30px;
-    box-shadow: 5px 8px 12px black;
-
-}
-.fotos .guantes img {
-    width: 600px;
-    height: 400px;
-    margin: 10px;
-    order: 2;
-    border-radius: 30px;
-    box-shadow: 5px 8px 12px black;
-}
-.fotos .zapatillas img {
-    width: 600px;
-    height: 400px;
-    margin: 10px;
-    order: 3;
-    border-radius: 30px;
-    box-shadow: 5px 8px 12px black;
-}
-.fotos .indumentaria img {
-    width: 600px;
-    height: 400px;
-    margin: 10px;
-    order: 4;
-    border-radius: 30px;
-    box-shadow: 5px 8px 12px black;
-}
-.fotos .lentes img {
-    width: 600px;
-    height: 400px;
-    margin: 10px;
-    order: 5;
-    border-radius: 30px;
-    box-shadow: 5px 8px 12px black;
-}
-.fotos .mochilas img {
-    width: 600px;
-    height: 400px;
-    margin: 10px;
-    order: 6;
-    border-radius: 30px;
-    box-shadow: 5px 8px 12px black;
+    box-shadow: 5px 8px 12px black;       
+    }
+    .col-lg-4 {
+        padding: 25px;
+        margin: 0 !important;
+    }
+    p {
+        font-size: 25px;
+        margin-top: 10px;
+    }
 }
 
-.fotos p {
-    text-align: center;
-    font-size: 40px;
+#galeria img:hover {
+    border: 2px solid rgb(0, 0, 0);
 }
+
+@media (max-width:768px) {
+    #equipamiento {
+        font-size: 30px;
+    }
+}
+
 
 .notas {
     padding: 15px;
@@ -479,16 +339,11 @@ div .bc-text {
 
 .importancia {
     padding: 15px;
-    font-size: 25px;
-   
-  
+    font-size: 25px;    
 }
 
 .header-equipamiento {
-    text-align: center;
-    
-
-    
+    text-align: center;       
 }
 
 /*EMPIEZA EVENTOS  */
@@ -526,7 +381,7 @@ div .bc-text {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     column-gap: 50px;
-    width: 120%;
+    width: 100%;
     align-items: start; 
     padding-bottom: 50px;
        
@@ -616,26 +471,40 @@ ul li ul li a {
     .mapa {
         margin: 50px;
             p {    
-                text-decoration: underline;
+                text-decoration: none;
                 font-size: 25px;
                 }
             }
     .formulario {
         margin: 30px;
         padding: 10px;  
-        text-decoration: underline; 
+        text-decoration: none; 
         }
         .bloque-formulario {
             margin: 50px;  
           } 
 }
 
-
-
-.contacto__body {
-    background-image: $gradiente ;
-
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
 }
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:500px;
+    width:500px;
+    
+}
+
+.mediosContacto {
+    @include titulo;
+    margin-top: 50px;       
+}
+
 
 .header__contacto {
     h1 {
